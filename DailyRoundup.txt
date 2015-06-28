@@ -1,0 +1,16 @@
+The SpoilerTV Daily Newsreel - 6th June *Updated*
+
+<img  class="headerimage" width="726px"  border="0" src="http://3.bp.blogspot.com/-ultow3vQ3WM/VPmUom-p9hI/AAAAAAABotg/iDypj86FmEs/s1600/Header-Newsreel.jpg" />
+
+<b>Latest News Items</b> (<a class='pilotlink' href='#newsreel' id='inline'>What is this?</a>)
+
+<ul class="collapsible" data-collapsible="accordion">
+
+<li>
+<div class="collapsible-header large">
+</div>
+<div class="collapsible-body">
+
+</div>
+</li>
+</ul>

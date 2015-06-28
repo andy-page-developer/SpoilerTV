@@ -1,0 +1,30 @@
+MOVIES: Star Wars: The Force Awakens - News Roundup
+
+<img  class="headerimage" width="726px"  border="0" src="http://1.bp.blogspot.com/-3915SyHkj4w/VHNfMnbLh5I/AAAAAAABkCM/dI494_tzQr0/s1600/StarWarsTheForceAwakensLogo.jpeg" />
+
+<b>Latest Movie News</b> (<a class='pilotlink' href='#movieroundup' id='inline'>What is this?</a>)
+
+<ul class="collapsible" data-collapsible="accordion">
+
+<li>
+<div class="collapsible-header large">
+</div>
+<div class="collapsible-body">
+
+</div>
+</li>
+</ul>
+
+<div class="RecentMNRcontainer">
+<div class="RecentMNR authorreviews">
+Recent Movie Roundups
+</div>
+<div id="RecentMNR">
+</div>
+</div>
+<script type='text/javascript'>          //<![CDATA[
+$('#RecentMNR').feedget({ 
+    feed: 'http://www.spoilertv.com/feeds/posts/default/-/MNR',
+    entries: 4,    buttons: false,  twitter: false,  facebook: false, showHeader: false
+});
+ //]]></script>

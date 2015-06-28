@@ -1,0 +1,28 @@
+*Channel
+Loading...*
+regex((monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tues|tue|wed|thurs|thur|thu|fri|sat|sun)\.*,*\s*(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)\.*\s*\d{1,2}\s*(st|nd|rd|th)*\.*\s*,*\s*\d{2,4})
+regex(E\d+([,\.]\d+)*)
+regex([a-zA-Z\xA1-\xFF]+\, [a-zA-Z\xA1-\xFF]+ \d{1,2} \d\d\d\d \d{1,2}:\d{1,2} [a-zA-Z\xA1-\xFF]+ [a-zA-Z\xA1-\xFF]+)
+regex(\d{1,2}:\d{1,2} [a-zA-Z\xA1-\xFF]+ [a-zA-Z\xA1-\xFF]+)
+regex(\$\d+([,\.]\d+)*)
+regex(\d+([,\.]\d+)*:\d+([,\.]\d+)* am EST)
+WATCH ONLINE
+$
+ABC
+AMC
+CBS
+FOX
+FX
+HBO
+LIFE
+MAX
+MTV
+NBC
+SHOW
+STARZ
+SYFY
+TNT
+USA
+WGNAMER
+No episodes found.
+Cast and Crew*
