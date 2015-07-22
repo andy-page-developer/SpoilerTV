@@ -68,6 +68,10 @@
       </b:if>
     </b:if>
 
+<b:if cond='data:blog.searchLabel'>
+      <meta expr:content='data:blog.searchLabel' property='og:title'/>
+      <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+<b:else/>
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
       <meta expr:content='data:blog.pageName' property='og:title'/>
       <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
@@ -75,6 +79,8 @@
       <meta expr:content='data:blog.title' property='og:title'/>
       <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
     </b:if>
+</b:if>
+
     <meta content='SpoilerTV' property='og:site_name'/>
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
       <b:if cond='data:blog.postImageUrl'>
@@ -598,6 +604,7 @@ html{height:101%;font-family: &#39;Roboto&#39;, sans-serif !important;}
 div#blog-posts {margin-bottom: 26px;}
 .postheader {margin-left:65px;padding-top: 10px;padding-bottom: 12px;}
 .red {color:yellow !important;}
+.yellow {color:yellow !important;}
 a.dsq-widget-user {display:block;}
 img.dsq-widget-avatar {padding: 0px 0px 0px 0px !important;float: right !important;margin-left: 5px !important;margin-bottom: 30px !important;border: #374A55 solid !important;}
 .articleimg {width: 140px;height: 93px;float: left;margin-right: 15px;margin-bottom: 24px;margin-top: 8px;min-height: 0px;}
@@ -1495,6 +1502,7 @@ dsq-widget-user {font-size: 14px;padding-top: 2px;}
 /*.twitterbuttons {margin-top: -40px;height:0px;margin-right:12px;text-align:right;} */
 .twitterbuttons {
   padding-top: 8px;
+  min-height: 35px;
 }
 .pds-box {width: 100% !important;margin-left: -2px !important;}          
 .ratingstitle {font-weight: normal;background-color: #2D90B6;color: white;font-size: 26px;height: 30px;vertical-align: middle;line-height: 30px !important;text-align: center;margin-left: -2px;margin-right: 2px;padding-bottom: 15px;padding-top: 15px;Text-transform: uppercase;}
@@ -1571,7 +1579,7 @@ if(themetype == "dark") {
 			document.write("<style>.articleimg img { -moz-border-radius: 0px; }</style>");
 			document.write("<style>.articleimg img { -khtml-border-radius: 0px; }</style>");
 			document.write("<style>.post {position: relative; padding-bottom: 10px;}</style>");
-document.write("<style>a.post-newcommentlink.dsq-comment-count.comment-link.commentslink {height: 22px;float: right;margin-right: 4px;position: absolute;left: -2px;bottom: 11px;background-color: #2D90B6; color: white;font-size: 16px;padding: 4px;width: 132px;text-align: center;-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);}</style>");
+document.write("<style>a.post-newcommentlink.dsq-comment-count.comment-link.commentslink {height: 22px;float: right;margin-right: 4px;position: absolute;left: -3px;bottom: 11px;background-color: #2D90B6; color: white;font-size: 16px;padding: 4px;width: 132px;text-align: center;-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);}</style>");
 document.write("<style>.post.uncustomized-post-template {height: 132px;}</style>");
 document.write("<style>.postheader {padding-top: 6px;margin-top: 15px;margin-bottom: 0px;margin-left: 155px;height: 130px;}</style>");
 			ga('send', 'event', 'screenformat', 'Sharp');
@@ -1824,7 +1832,6 @@ if(cleantype == "clean") {
                   </option>
 <option value='http://www.spoilertv.com/search/label/12%20Monkeys'>12 Monkeys</option>
 <option value='http://www.spoilertv.com/search/label/3001%3A%20The%20Final%20Odyssey'>3001: The Final Odyssey</option>
-<option value='http://www.spoilertv.com/search/label/A.D.'>A.D.</option>
 <option value='http://www.spoilertv.com/search/label/Agent%20Carter'>Agents Carter</option>
 <option value='http://www.spoilertv.com/search/label/Agent%20X'>Agent X</option>
 <option value='http://www.spoilertv.com/search/label/Agents%20of%20SHIELD'>Agents of SHIELD</option>
@@ -1833,7 +1840,6 @@ if(cleantype == "clean") {
 <option value='http://www.spoilertv.com/search/label/American%20Dad'>American Dad</option>
 <option value='http://www.spoilertv.com/search/label/American%20Gods'>American Gods</option>
 <option value='http://www.spoilertv.com/search/label/American%20Horror%20Story'>American Horror Story</option>
-<option value='http://www.spoilertv.com/search/label/American%20Odyssey'>American Odyssey</option>
 <option value='http://www.spoilertv.com/search/label/Angel%20from%20Hell'>Angel from Hell</option>
 <option value='http://www.spoilertv.com/search/label/YAMATEOTW'>YAMATEOTW</option>
 <option value='http://www.spoilertv.com/search/label/Aquarius'>Aquarius</option>
@@ -1863,6 +1869,7 @@ if(cleantype == "clean") {
 <option value='http://www.spoilertv.com/search/label/Bob%27s%20Burgers'>Bob&#39;s Burgers</option>
 <option value='http://www.spoilertv.com/search/label/Bones'>Bones</option>
 <option value='http://www.spoilertv.com/search/label/Bordertown'>Bordertown</option>
+<option value='http://www.spoilertv.com/search/label/Broke'>Broke</option>
 <option value='http://www.spoilertv.com/search/label/Brooklyn%20Nine-Nine'>Brooklyn Nine-Nine</option>
 <option value='http://www.spoilertv.com/search/label/Brothers%20in%20Atlanta'>Brothers in Atlanta</option>
 <option value='http://www.spoilertv.com/search/label/Cable%20Guide'>Cable Guide</option>
@@ -1924,6 +1931,7 @@ if(cleantype == "clean") {
 <option value='http://www.spoilertv.com/search/label/Fortitude'>Fortitude</option>
 <option value='http://www.spoilertv.com/search/label/Freedom%20Run'>Freedom Run</option>
 <option value='http://www.spoilertv.com/search/label/Fresh%20Off%20The%20Boat'>Fresh Off The Boat</option>
+<option value='http://www.spoilertv.com/search/label/From%20Dusk%20Till%20Dawn'>From Dusk Till Dawn</option>
 <option value='http://www.spoilertv.com/search/label/Fuller%20House'>Fuller House</option>
 <option value='http://www.spoilertv.com/search/label/Galavant'>Galavant</option>
 <option value='http://www.spoilertv.com/search/label/Game%20of%20Silence'>Game of Silence</option>
@@ -2002,11 +2010,11 @@ if(cleantype == "clean") {
 <option value='http://www.spoilertv.com/search/label/Mr.%20Robinson'>Mr. Robinson</option>
 <option value='http://www.spoilertv.com/search/label/Mr.%20Robot'>Mr. Robot</option>
 <option value='http://www.spoilertv.com/search/label/Murder%20in%20the%20First'>Murder in the First</option>
+<option value='http://www.spoilertv.com/search/label/Narcos'>Narcos</option>
 <option value='http://www.spoilertv.com/search/label/Nashville'>Nashville</option>
 <option value='http://www.spoilertv.com/search/label/NCIS%3A%20Los%20Angeles'>NCIS: Los Angeles</option>
 <option value='http://www.spoilertv.com/search/label/NCIS%3A%20New%20Orleans'>NCIS: New Orleans</option>
 <option value='http://www.spoilertv.com/search/label/NCIS'>NCIS</option>
-<option value='http://www.spoilertv.com/search/label/Nurse%20Jackie'>Nurse Jackie</option>
 <option value='http://www.spoilertv.com/search/label/Of%20Kings%20and%20Prophets'>Of Kings and Prophets</option>
 <option value='http://www.spoilertv.com/search/label/Olympus'>Olympus</option>
 <option value='http://www.spoilertv.com/search/label/Once%20Upon%20A%20Time'>Once Upon A Time</option>
@@ -2058,6 +2066,7 @@ if(cleantype == "clean") {
 <option value='http://www.spoilertv.com/search/label/Shadowhunters'>Shadowhunters</option>
 <option value='http://www.spoilertv.com/search/label/Shameless'>Shameless</option>
 <option value='http://www.spoilertv.com/search/label/Sherlock'>Sherlock</option>
+<option value='http://www.spoilertv.com/search/label/Significant%20Mother'>Significant Mother</option>
 <option value='http://www.spoilertv.com/search/label/Silicon%20Valley'>Silicon Valley</option>
 <option value='http://www.spoilertv.com/search/label/Sleepy%20Hollow'>Sleepy Hollow</option>
 <option value='http://www.spoilertv.com/search/label/South%20Park'>South Park</option>
@@ -2575,15 +2584,15 @@ if(cleantype == "clean") {
                               Hawaii Five-O
                             </a>
                           </li>
-                        </ul>
-                      </div>
-                      <div class='col_1'>
-                        <ul>
                           <li>
                             <a href='http://www.spoilertv.com/search/label/Life%20in%20Pieces'>
                               Life in Pieces
                             </a>
                           </li>
+                        </ul>
+                      </div>
+                      <div class='col_1'>
+                        <ul>
                           <li>
                             <a href='http://www.spoilertv.com/search/label/Limitless'>
                               Limitless
@@ -2732,6 +2741,11 @@ if(cleantype == "clean") {
                           <li>
                             <a href='http://www.spoilertv.com/search/label/Reign'>
                               Reign
+                            </a>
+                          </li>
+                          <li>
+                            <a href='http://www.spoilertv.com/search/label/Significant%20Mother'>
+                              Significant Mother
                             </a>
                           </li>
                           <li>
@@ -2888,16 +2902,6 @@ if(cleantype == "clean") {
 				<div class='col_1'>
                         <ul>
                           <li>
-                            <a href='http://www.spoilertv.com/search/label/A.D.'>
-                              A.D.
-                            </a>
-                          </li>
-                          <li>
-                            <a href='http://www.spoilertv.com/search/label/American%20Odyssey'>
-                              American Odyssey
-                            </a>
-                          </li>
-                          <li>
                             <a href='http://www.spoilertv.com/search/label/Aquarius'>
                               Aquarius
                             </a>
@@ -2942,15 +2946,15 @@ if(cleantype == "clean") {
                               Freedom Run
                             </a>
                           </li>
-                        </ul>
-                      </div>
-                      <div class='col_1'>
-                        <ul>
                           <li>
                             <a href='http://www.spoilertv.com/search/label/Game%20of%20Silence'>
                               Game of Silence
                             </a>
                           </li>
+                        </ul>
+                      </div>
+                      <div class='col_1'>
+                        <ul>
                           <li>
                             <a href='http://www.spoilertv.com/search/label/Grimm'>
                               Grimm
@@ -3166,6 +3170,11 @@ if(cleantype == "clean") {
                           <li>
                             <a href='http://www.spoilertv.com/search/label/Better%20Call%20Saul'>
                               Better Call Saul
+                            </a>
+                          </li>
+                          <li>
+                            <a href='http://www.spoilertv.com/search/label/Broke'>
+                              Broke
                             </a>
                           </li>
                           <li>
@@ -3611,6 +3620,11 @@ if(cleantype == "clean") {
                             </a>
                           </li>
 						 <li>
+                            <a href='http://www.spoilertv.com/search/label/Narcos'>
+                              Narcos
+                            </a>
+                          </li>
+						 <li>
                             <a class='smallmenufont' href='http://www.spoilertv.com/search/label/Orange%20is%20the%20New%20Black'>
                               Orange is the New Black
                             </a>
@@ -3685,11 +3699,6 @@ if(cleantype == "clean") {
                           <li>
                             <a href='http://www.spoilertv.com/search/label/Masters%20of%20Sex'>
                               Masters of Sex
-                            </a>
-                          </li>
-                          <li>
-                            <a href='http://www.spoilertv.com/search/label/Nurse%20Jackie'>
-                              Nurse Jackie
                             </a>
                           </li>
                           <li>
@@ -4050,6 +4059,11 @@ if(cleantype == "clean") {
                             </a>
                           </li>
                           <li>
+                            <a href='http://www.spoilertv.com/search/label/From%20Dusk%20Till%20Dawn'>
+                              From Dusk Till Dawn
+                            </a>
+                          </li>
+                          <li>
                             <a href='http://www.spoilertv.com/search/label/Girl%20Meets%20World'>
                               Girl Meets World
                             </a>
@@ -4132,18 +4146,18 @@ if(cleantype == "clean") {
                               Poldark
                             </a>
                           </li>
-                        </ul>
-                      </div>
-                      <div class='col_1'>
-                        <ul>
                           <li>
                             <a href='http://www.spoilertv.com/search/label/Sherlock'>
                               Sherlock
                             </a>
                           </li>
+                        </ul>
+                      </div>
+                      <div class='col_1'>
+                        <ul>
                           <li>
-                            <a href='http://www.spoilertv.com/search/label/Tatau'>
-                              Tatau
+                            <a href='http://www.spoilertv.com/search/label/Strike%20Back'>
+                              Strike Back
                             </a>
                           </li>
                           <li>
@@ -4549,35 +4563,34 @@ Below will be the 9 most recently updated Movie Roundup Articles for the upcomin
 <div class='feedget-body-container ui-widget-content' style='height: 498px; overflow-x: hidden; overflow-y: auto;'>
 <div class='feedget-elements-container' data-current-element-id='0' style='position: relative;'><div class='feedget-element' data-element-id='1'>
 <div class='feedget-element-header'>
-<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/06/movies-bourne-5-news-roundup.html' target='_blank'>Bourne 5</a></span></div>
-<a href='http://www.spoilertv.com/2015/06/movies-bourne-5-news-roundup.html'><img class='feedget-element-image' src='http://2.bp.blogspot.com/-sfuzsXr72sA/VYn9c7AYQ4I/AAAAAAAABfo/wecrOElFR_w/s1600/Bourne-5-gets-a-new-release-date.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
+<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/04/movies-ant-man-trailer-2-teaser.html' target='_blank'>Ant-Man</a></span></div>
+<a href='http://www.spoilertv.com/2015/04/movies-ant-man-trailer-2-teaser.html'><img class='feedget-element-image' src='http://1.bp.blogspot.com/-8rUHme9D5WU/VStxvq-LqFI/AAAAAAABpuU/p0pkhOBF2Zw/s1600/ant-man-header.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
+<div class='feedget-element-header'>
+<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/04/movies-spider-man-new-avenger-news.html' target='_blank'>Spectacular Spider-Man</a></span></div>
+<a href='http://www.spoilertv.com/2015/04/movies-spider-man-new-avenger-news.html'><img class='feedget-element-image' src='http://4.bp.blogspot.com/-ShXz24NMFUk/VT9GtQRA4WI/AAAAAAABqKA/E4eJAAgaAQg/s1600/spider-man-the-new-avenger.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
+<div class='feedget-element-header'>
+<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/04/movies-x-men-apocalypse-first-look-key.html' target='_blank'>X-Men: Apocalypse</a></span></div>
+<a href='http://www.spoilertv.com/2015/04/movies-x-men-apocalypse-first-look-key.html'><img class='feedget-element-image' src='http://4.bp.blogspot.com/-KpL7WgDTCQc/VSbH3lR5hvI/AAAAAAABpos/H69IsWQwCPo/s1600/x-men.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
+<div class='feedget-element-header'>
+<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/06/movies-ghostbusters-news-roundup.html' target='_blank'>Ghostbusters</a></span></div>
+<a href='http://www.spoilertv.com/2015/06/movies-ghostbusters-news-roundup.html'><img class='feedget-element-image' src='http://1.bp.blogspot.com/-QQAeuQL1DSI/VYTtXKMEXbI/AAAAAAAABd8/lCfDsrukyIk/s1600/The-AppStore-Pays-Tribute-to-the-Ghostbusters-Video-457692-2.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
 <div class='feedget-element-header'>
 <span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/04/movies-doctor-strange-news-roundup.html' target='_blank'>Doctor Strange</a></span></div>
 <a href='http://www.spoilertv.com/2015/04/movies-doctor-strange-news-roundup.html'><img class='feedget-element-image' src='http://2.bp.blogspot.com/-SWjPNLW65kk/VTGN-jaoELI/AAAAAAAAC98/hgJuj_1nEow/s1600/Doctor_Strange.jpeg.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
 <div class='feedget-element-header'>
-<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/06/movies-avengers-infinity-war-part-i.html' target='_blank'>Avengers: Infinity War Part I</a></span></div>
-<a href='http://www.spoilertv.com/2015/06/movies-avengers-infinity-war-part-i.html'><img class='feedget-element-image' src='http://2.bp.blogspot.com/-cUK6fQJ_9zw/VYnLbmd6fFI/AAAAAAAABfY/WxhNnI0YZMs/s1600/Infinity-Wars-04.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
+<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/04/movies-fantastic-four-news-roundup.html' target='_blank'>Fantastic Four</a></span></div>
+<a href='http://www.spoilertv.com/2015/04/movies-fantastic-four-news-roundup.html'><img class='feedget-element-image' src='http://1.bp.blogspot.com/-ivAzjxv5DYU/VSzpSehThaI/AAAAAAABpxc/QWxGJMHLegw/s1600/fantastic4.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
 <div class='feedget-element-header'>
-<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/04/movies-spider-man-new-avenger-news.html' target='_blank'>Spider-man: The New Avenger</a></span></div>
-<a href='http://www.spoilertv.com/2015/04/movies-spider-man-new-avenger-news.html'><img class='feedget-element-image' src='http://4.bp.blogspot.com/-ShXz24NMFUk/VT9GtQRA4WI/AAAAAAABqKA/E4eJAAgaAQg/s1600/spider-man-the-new-avenger.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
+<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/04/movies-suicide-squad-first-look-at.html' target='_blank'>Suicide Squad</a></span></div>
+<a href='http://www.spoilertv.com/2015/04/movies-suicide-squad-first-look-at.html'><img class='feedget-element-image' src='http://1.bp.blogspot.com/-I33Va3zpCXs/VTtv6ueWARI/AAAAAAABqGo/BBp5UZ0CDsc/s1600/Suicide-Squad-logo-1.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
+<div class='feedget-element-header'>
+<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/03/movies-deadpool-ryan-reynolds-reveals.html' target='_blank'>Deadpool</a></span></div>
+<a href='http://www.spoilertv.com/2015/03/movies-deadpool-ryan-reynolds-reveals.html'><img class='feedget-element-image' src='http://4.bp.blogspot.com/-ok7Sr_VDIF0/VUDOqvXX7XI/AAAAAAABqMI/RRuvZ-EXyX8/s1600/deadpool.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
 <div class='feedget-element-header'>
 <span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/04/movies-star-wars-force-awakens-news.html' target='_blank'>Star Wars: The Force Awakens</a></span></div>
-<a href='http://www.spoilertv.com/2015/04/movies-star-wars-force-awakens-news.html'><img class='feedget-element-image' src='http://1.bp.blogspot.com/-3915SyHkj4w/VHNfMnbLh5I/AAAAAAABkCM/dI494_tzQr0/s1600/StarWarsTheForceAwakensLogo.jpeg'/></a></div><div class='feedget-element' data-element-id='1'>
-<div class='feedget-element-header'>
-<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/04/movies-independence-day-2-news-roundup.html' target='_blank'>Independence Day - Resurgence</a></span></div>
-<a href='http://www.spoilertv.com/2015/04/movies-independence-day-2-news-roundup.html'><img class='feedget-element-image' src='http://3.bp.blogspot.com/-8GT2l8YpZc4/VYj_7fYh48I/AAAAAAABsv4/OwEvm_F02Ss/s1600/IDR_1920_BGheader.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
-<div class='feedget-element-header'>
-<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/06/movies-thor-ragnarok-news-roundup.html' target='_blank'>Thor: Ragnarok</a></span></div>
-<a href='http://www.spoilertv.com/2015/06/movies-thor-ragnarok-news-roundup.html'><img class='feedget-element-image' src='http://1.bp.blogspot.com/-pquIC19J320/VYiDl4NOHvI/AAAAAAAABfE/lmPFnYBHxwE/s1600/Ragnarok.jpeg'/></a></div><div class='feedget-element' data-element-id='1'>
-<div class='feedget-element-header'>
-<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/03/movies-mission-impossible-rogue-nation.html' target='_blank'>Mission Impossible: Rogue Nation</a></span></div>
-<a href='http://www.spoilertv.com/2015/03/movies-mission-impossible-rogue-nation.html'><img class='feedget-element-image' src='http://2.bp.blogspot.com/-Z0XCKx2MA0E/VUDNAWDsVsI/AAAAAAABqL8/Dv8fVTQV4rY/s1600/rogue-nation.jpg'/></a></div><div class='feedget-element' data-element-id='1'>
-<div class='feedget-element-header'>
-<span class='feedget-element-title'><a href='http://www.spoilertv.com/2015/04/movies-ant-man-trailer-2-teaser.html' target='_blank'>Ant-Man</a></span></div>
-<a href='http://www.spoilertv.com/2015/04/movies-ant-man-trailer-2-teaser.html'><img class='feedget-element-image' src='http://1.bp.blogspot.com/-8rUHme9D5WU/VStxvq-LqFI/AAAAAAABpuU/p0pkhOBF2Zw/s1600/ant-man-header.jpg'/></a></div></div>
+<a href='http://www.spoilertv.com/2015/04/movies-star-wars-force-awakens-news.html'><img class='feedget-element-image' src='http://1.bp.blogspot.com/-3915SyHkj4w/VHNfMnbLh5I/AAAAAAABkCM/dI494_tzQr0/s1600/StarWarsTheForceAwakensLogo.jpeg'/></a></div></div>
 </div>
 </div>
-
 
                       </div>
 
@@ -4858,7 +4871,7 @@ document.write('<scr'+'ipt language="javascript1.1" src="http://ads.intergi.com/
 
 				<a class='sub optionpop' href='#options' onClick='ga(&apos;send&apos;, &apos;event&apos;, &apos;navbarclick&apos;, &apos;ConfigureSite&apos;);' title='Configure Site'>
                   <div class='sectionbox waves-effect waves-yellow btn-medium'>
-                    <div class='sectionboxtitle'>
+                    <div class='sectionboxtitle yellow'>
 <img src='http://2.bp.blogspot.com/-i6ybdA4ITlQ/VE4TcbADhkI/AAAAAAABi2c/PO_Xq4jQB8g/s1600/cog.png'/>
                       Configure Site
                       <br/>
@@ -9149,250 +9162,6 @@ if (jQuery(&#39;#adsensewide&#39;).height() == 0) {
 
 });
 </script>
-</b:if>
-
-<b:if cond='data:blog.isMobile'>
-                <b:else/>
-                <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                  <script type='text/javascript'>
-                    //<![CDATA[
-                    $(document).ready(function() {
-                      var labels = $('.post-newlabels').text();
-console.log (labels);
-                      var counter = labels.split(",").length - 1;
-                      if (counter<4){
-                        if (labels.indexOf("Castle") > 0){
-                          //console.log('showing Castle');
-                          $('.twitterbuttons').append(
-                            $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STV_Castle')
-                          )
-                        }
-                        else if (labels.indexOf("Outlander") > 0){
-                          $('.twitterbuttons').append(
-                            $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STV_Outlander')
-                          )
-                        }
-                        else if (labels.indexOf("Teen Wolf") > 0){
-                          $('.twitterbuttons').append(
-                            $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STV_TeenWolf')
-                          )
-                        }
-                          else  if (labels.indexOf("Scandal") > 0){
-                            $('.twitterbuttons').append(
-                              $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STV_Scandal')
-                            )
-                          } 
-                            else  if (labels.indexOf("Arrow") > 0){
-console.log('showing Arrow');
-                              $('.twitterbuttons').append(
-                                $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_Arrow')
-                              )
-                            } 
-                              else   if (labels.indexOf("Beauty and the Beast") > 0){
-                                $('.twitterbuttons').append(
-                                  $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_BATB')
-                                )
-                              } 
-                                else  if (labels.indexOf("Once Upon A Time") > 0){
-                                  $('.twitterbuttons').append(
-                                    $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_OUAT')
-                                  )
-                                } 
-                                  else  if (labels.indexOf("Homeland") > 0){
-                                    $('.twitterbuttons').append(
-                                      $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STV_Homeland')
-                                    )
-                                  } 
-                                   
-                                      else   if (labels.indexOf("Supernatural") > 0){
-                                        $('.twitterbuttons').append(
-                                          $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_SPN')
-                                        )
-                                      } 		
-                                        else   if (labels.indexOf("NCIS") > 0){
-                                          $('.twitterbuttons').append(
-                                            $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_NCIS')
-                                          )
-                                        } 
-                                          else   if (labels.indexOf("Game of Thrones") > 0){
-                                            $('.twitterbuttons').append(
-                                              $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_GOT')
-                                            )
-                                          } 
-                                            else   if (labels.indexOf("Vampire Diaries") > 0){
-                                              $('.twitterbuttons').append(
-                                                $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_TVD')
-                                              )
-                                            } 
-                                              else   if (labels.indexOf("Glee") > 0){
-                                                $('.twitterbuttons').append(
-                                                  $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_Glee')
-                                                )
-                                              } 
-                                                else    if (labels.indexOf("Grimm") > 0){
-                                                  $('.twitterbuttons').append(
-                                                    $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTVGrimm')
-                                                  )
-                                                } 
-                                                  else  if (labels.indexOf("Haven") > 0){
-                                                    $('.twitterbuttons').append(
-                                                      $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTVHaven')
-                                                    )
-                                                  } 
-                                                    else   if (labels.indexOf("Person of Interest") > 0){
-                                                      $('.twitterbuttons').append(
-                                                        $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_POI')
-                                                      )
-                                                    } 		
-                                                      else  if (labels.indexOf("Suits") > 0){
-                                                        $('.twitterbuttons').append(
-                                                          $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_Suits')
-                                                        )
-                                                      } 
-                                                        else if (labels.indexOf("The Flash") > 0){
-                                                          $('.twitterbuttons').append(
-                                                            $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','stv_theflash')
-                                                          )
-                                                        } 
-                                                        else if (labels.indexOf("Supergirl") > 0){
-                                                          $('.twitterbuttons').append(
-                                                            $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','stv_supergirl')
-                                                          )
-                                                        } 
-                                                        else if (labels.indexOf("Legends of Tomorrow") > 0){
-                                                          $('.twitterbuttons').append(
-                                                            $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','stv_lot')
-                                                          )
-                                                        } 
-                                                          else  if (labels.indexOf("Agents of SHIELD") > 0){
-                                                            $('.twitterbuttons').append(
-                                                              $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STV_SHIELD')
-                                                            )
-                                                          } 
-                                                            else  if (labels.indexOf("American Horror Story") > 0){
-                                                              $('.twitterbuttons').append(
-                                                                $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_AHS')
-                                                              )
-                                                            } 
-                                                              else  if (labels.indexOf("Bones") > 0){
-                                                                $('.twitterbuttons').append(
-                                                                  $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_Bones')
-                                                                )
-                                                              } 
-                                                                else   if (labels.indexOf("Pretty Little Liars") > 0){
-                                                                  $('.twitterbuttons').append(
-                                                                    $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_PLL')
-                                                                  )
-                                                                } 		
-                                                                  else  if (labels.indexOf("The Walking Dead") > 0){
-                                                                    $('.twitterbuttons').append(
-                                                                      $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_TWD')
-                                                                    )
-                                                                  } 
-                                                                    else  if (labels.indexOf("Rookie Blue") > 0){
-                                                                      $('.twitterbuttons').append(
-                                                                        $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_RB')
-                                                                      )
-                                                                    } 
-                                                                      else   if (labels.indexOf("Criminal Minds") > 0){
-                                                                        $('.twitterbuttons').append(
-                                                                          $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_CM')
-                                                                        )
-                                                                      } 
-                                                                        else   if (labels.indexOf("The 100") > 0){
-                                                                          $('.twitterbuttons').append(
-                                                                            $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTVthe100')
-                                                                          )
-                                                                        } 
-                                                                          else   if (labels.indexOf("Hawaii 5-0") > 0){
-                                                                            $('.twitterbuttons').append(
-                                                                              $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_H50')
-                                                                            )
-                                                                          } 
-                                                                            else  if (labels.indexOf("The Musketeers") > 0){
-                                                                              $('.twitterbuttons').append(
-                                                                                $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STVthemusketeers')
-                                                                              )
-                                                                            } 		
-                                                                              else   if (labels.indexOf("Community") > 0){
-                                                                                $('.twitterbuttons').append(
-                                                                                  $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STV_Community')
-                                                                                )
-                                                                              } 
-                                                                              
-                                                                                  else    if (labels.indexOf("The Following") > 0){
-                                                                                    $('.twitterbuttons').append(
-                                                                                      $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STVTheFollowing')
-                                                                                    )
-                                                                                  } 
-                                                                                                                                                                         else   if (labels.indexOf("Lost Girl") > 0){
-                                                                                        $('.twitterbuttons').append(
-                                                                                          $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STV_LostGirl')
-                                                                                        )
-                                                                                      } 
-                                                                                        else   if (labels.indexOf("New Girl") > 0){
-                                                                                          $('.twitterbuttons').append(
-                                                                                            $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','stv_newgirl')
-                                                                                          )
-                                                                                        } 		
-                                                                                          
-                                                                                            else   if (labels.indexOf("Doctor Who") > 0){
-                                                                                              $('.twitterbuttons').append(
-                                                                                                $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STV_DrWho')
-                                                                                              )
-                                                                                            } 
-                                                                                              else   if (labels.indexOf("Downton Abbey") > 0){
-                                                                                                $('.twitterbuttons').append(
-                                                                                                  $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','STVDowntonAbbey')
-                                                                                                )
-                                                                                              } 
-                                                                                                
-                                                                                                  else   if (labels.indexOf("Rizzoli and Isles") > 0){
-                                                                                                    $('.twitterbuttons').append(
-                                                                                                      $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_RaI')
-                                                                                                    )
-                                                                                                  } 
-                                                                                                    else   if (labels.indexOf("The Big Bang Theory") > 0){
-                                                                                                      $('.twitterbuttons').append(
-                                                                                                        $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_TBBT')
-                                                                                                      )
-                                                                                                    } 		
-                                                                                                      else    if (labels.indexOf("The Good Wife") > 0){
-                                                                                                        //console.log('showing Good wife');
-                                                                                                        $('.twitterbuttons').append(
-                                                                                                          $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_TGW')
-                                                                                                        )
-                                                                                                      } 		
-                                                                                                        
-                                                                                                          else   if (labels.indexOf("Movies") > 0){
-                                                                                                            $('.twitterbuttons').append(
-                                                                                                              $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTVMovies')
-                                                                                                            )
-                                                                                                          } 		
-                                                                                                            else   if (labels.indexOf("Sleepy Hollow") > 0){
-                                                                                                              $('.twitterbuttons').append(
-                                                                                                                $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','http://twitter.com/STVSleepyHollow')
-                                                                                                              )
-                                                                                                            } 
-                                                                                                              else   if (labels.indexOf("SpoilerTV Article") > 0){
-                                                                                                                $('.twitterbuttons').append(
-                                                                                                                  $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV_News')
-                                                                                                                )
-                                                                                                              } 
-                                                                                                                else   {
-                                                                                                                  $('.twitterbuttons').append(
-                                                                                                                    $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV')
-                                                                                                                  )
-                                                                                                                } 
-                      }
-                      else   {
-                        $('.twitterbuttons').append(
-                          $('<a>').addClass('addthis_button_twitter_follow_native').attr('tf:size','large').attr('tf:show-count','false').attr('tw:screen_name','SpoilerTV')
-                        )
-                      } 
-                    });
-                    //]]></script>
-                </b:if>
 </b:if>
 
 
