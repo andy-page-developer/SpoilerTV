@@ -1,4 +1,4 @@
-<!-- more --><img width="726px" border="0" src="http://1.bp.blogspot.com/-bdXR8uYANyM/VGsnIboVG8I/AAAAAAABjvM/jGbIEd1jZ0w/s1600/header-dailyratings-white.jpg" />
+<img width="726px" border="0" src="http://1.bp.blogspot.com/-bdXR8uYANyM/VGsnIboVG8I/AAAAAAABjvM/jGbIEd1jZ0w/s1600/header-dailyratings-white.jpg" />
 
 <ul class="collapsible" data-collapsible="accordion">
 <li>
@@ -58,11 +58,16 @@ Don't forget to follow our <a href="https://twitter.com/stv_ratings"> Ratings On
 
 </div>
 </li>
-</ul>
+<li>
+<div class="collapsible-header large">
+Additional Ratings Resources
+</div>
+<div class="collapsible-body">
+<div class="newindent">
+If you’re interested in Ratings/Renewals/Cancellations then we have a number of resources here at SpoilerTV that we recommend you check out.
 
-<center>
-<iframe class="dailyratings" frameBorder="0" class="adsbygoogle blockedcontent"   src="https://docs.google.com/spreadsheets/d/1uNx7Nx2FyvFMmYe_Ed7flSe-gU88-Niwl5gP7IQlNRk/pubhtml?gid=336745480" width="100%" height="755"></iframe>
-</center>
+</div>
+<div class="ratingsmaincontainer">
 <div class="ratingsadditionalcontainer">
 <div class="ratingstitle ratingssmall">
 Renew/Cancel</div>
@@ -87,3 +92,12 @@ Ratings Scorecard</div>
 <a href="http://www.spoilertv.com/2014/08/full-ratings-tables-201415.html" imageanchor="1" ><img   class="ratingsimage" src="http://2.bp.blogspot.com/-Ivs6wCQ4ego/USC8P5m5uXI/AAAAAAABNVc/Qvmq8DvL58E/s320/alternate.png" /></a><div class="ratingstext">
 See how all the shows stack up against each other in the Ratings Scorecard Table.</div>
 </div>
+</div>
+</div>
+</li>
+</ul>
+
+<center>
+<iframe style="padding-left:4px;"  frameBorder="0" class="adsbygoogle blockedcontent"   src="https://docs.google.com/spreadsheets/d/1sVO6p7S08g0d32bP9xwASHAjHn_lxyovj7D-BepUpQA/pubhtml/sheet?headers=false&gid=708227951&range=A1:H28" width="100%" height="810"></iframe>
+<span class="highlight"><b>Tables being updated live. Please refresh for updates.</b></span>
+</center>
