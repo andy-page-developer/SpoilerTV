@@ -66,7 +66,7 @@ Don't forget to follow our <a href="https://twitter.com/stv_ratings"> Ratings On
 <div class="ratingsadditionalcontainer">
 <div class="ratingstitle ratingssmall">
 Renew/Cancel</div>
-<a href="http://www.spoilertv.com/2014/08/spoilertv-cancellation-predictor-table.html" imageanchor="1" ><img   class="ratingsimage" src="http://4.bp.blogspot.com/-eNkR2fqYH1U/USC4uP3w83I/AAAAAAABNTg/lA4O7Q7kxa8/s320/canceltable.png" /></a><div class="ratingstext">
+<a href="http://www.spoilertv.com/2015/08/spoilertv-cancellation-predictor-table.html" imageanchor="1" ><img   class="ratingsimage" src="http://4.bp.blogspot.com/-eNkR2fqYH1U/USC4uP3w83I/AAAAAAABNTg/lA4O7Q7kxa8/s320/canceltable.png" /></a><div class="ratingstext">
 Our Cancellation/Renewal predictions for the current season. </div>
 </div>
 <div class="ratingsadditionalcontainer">
@@ -78,12 +78,12 @@ Historical Ratings Database for nearly all major US shows going back to their fi
 <div class="ratingsadditionalcontainer">
 <div class="ratingstitle ratingssmall">
 Full Season Tables</div>
-<a href="http://www.spoilertv.com/2014/08/full-ratings-tables-201415.html" imageanchor="1" ><img class="ratingsimage"  src="http://4.bp.blogspot.com/-CIRkrc_gY0k/USC7EqqT-rI/AAAAAAABNT0/lXsLe1kQV58/s320/fulltables.png" /></a><div class="ratingstext">
+<a href="http://www.spoilertv.com/2015/08/full-tv-ratings-tables-201516.html" imageanchor="1" ><img class="ratingsimage"  src="http://4.bp.blogspot.com/-CIRkrc_gY0k/USC7EqqT-rI/AAAAAAABNT0/lXsLe1kQV58/s320/fulltables.png" /></a><div class="ratingstext">
 The current season full ratings tables for both Total Viewers and 18-49 Demos</div>
 </div>
 <div class="ratingsadditionalcontainer">
 <div class="ratingstitle ratingssmall">
 Ratings Scorecard</div>
-<a href="http://www.spoilertv.com/2014/08/full-ratings-tables-201415.html" imageanchor="1" ><img   class="ratingsimage" src="http://2.bp.blogspot.com/-Ivs6wCQ4ego/USC8P5m5uXI/AAAAAAABNVc/Qvmq8DvL58E/s320/alternate.png" /></a><div class="ratingstext">
+<a href="http://www.spoilertv.com/2015/08/full-tv-ratings-tables-201516.html" imageanchor="1" ><img   class="ratingsimage" src="http://2.bp.blogspot.com/-Ivs6wCQ4ego/USC8P5m5uXI/AAAAAAABNVc/Qvmq8DvL58E/s320/alternate.png" /></a><div class="ratingstext">
 See how all the shows stack up against each other in the Ratings Scorecard Table.</div>
 </div>
