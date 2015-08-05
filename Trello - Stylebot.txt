@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.board-canvas {
+    margin-right: 210px;
+}
+
+.board-header {
+    position: relative;
+}
+
+.board-menu {
+    width: 260px;
+}
+
+.board-widgets {
+    padding: 12px 0px 0 4px;
+}
+
+.list {
+    border-radius: 0px ;
+    flex: 0 0 215px ;
+    margin-left: 4px ;
+    margin-right: 0px ;
+}
+
+.list-card {
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.list-card-details {
+    overflow: hidden;
+    padding: 2px 4px 0px;
+    position: relative;
+    z-index: 10;
+}
+
+.list-header-name {
+    color: black;
+    font-size: 14px;
+}
+
+.member {
+    height: 24px;
+    width: 24px;
+}
+
+.list-wrapper {
+    width: 220px;
+    margin: 0 0px;
+}
+
+a.inline-object.action-card {
+    font-size: 12px;
+}
+
+a.inline-object.js-show-mem-menu {
+    font-size: 12px;
+}
+
+a.list-card-title.clear.js-card-name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a.list-card-title.js-card-name {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+div.phenom-desc {
+    font-size: 12px;
+}
+
+div.u-fancy-scrollbar.js-no-higher-edits.js-list-sortable.ui-sortable {
+    font-family: Helvetica;
+}
+
+h2.window-title-text.current.hide-on-edit.js-card-title {
+    font-family: Roboto;
+}
+
+span.date.js-hide-on-sending {
+    color: blue;
+    font-size: 10px;
+}
+
+.board-wrapper.is-show-menu .board-main-content {
+    margin-right: 0px;
+}
+
+.u-fancy-scrollbar::-webkit-scrollbar {
+    height: 9px;
+    width: 2px;
+}
+
+.list-wrapper:first-child {
+    margin-left: 4px;
+}
+
