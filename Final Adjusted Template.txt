@@ -1,14 +1,14 @@
-Final Adjusted TV Ratings for Sunday 4th August 2015
+Final Adjusted TV Ratings for Sunday 4th June 2016
 
 <img width="726px" border="0" src="http://2.bp.blogspot.com/-kwSjWx4rQz0/VGseX8CZh7I/AAAAAAABju4/RbhTevZr4SI/s1600/finalratings.jpg" />
 
 Remember you can view ALL Ratings and Charts for all shows/seasons in our <a class="sourcelink linkpop" href="http://www.stvplus.com/">Interactive TV Ratings Database</a>.
 
-We'll add the Broadcast Ratings in as soon as we get them. 
-
 <b>NOTE: The Interactive table below allows you to sort the various columns. The table will be updated live as the ratings come in. Refresh for updates.</b>
-
+ 
+<div id="wrapper" style="width: 100%; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch;">
 <iframe frameborder="0" src="http://stvplus.com/show/embed/?daily=2015-08-17" height="333px" width="100%" ></iframe> 
+</div>
 <div class="ratingsannounce">
 <center>
 If you are new to ratings or still confused, we recommend you read this excellent <a href="http://www.spoilertv.com/2013/10/renewals-and-cancellations-decisions.html">Ratings FAQ</a>.

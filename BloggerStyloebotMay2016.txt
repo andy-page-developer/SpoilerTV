@@ -1,0 +1,34 @@
+
+/* Hide the Labels */
+div.OJTUNIC-S-b {display: none;}
+
+/* Make Label Text Box Bigger */
+textarea.OJTUNIC-S-d {height: 110px;}
+
+/* Set Left Menu to Fixed */
+.OJTUNIC-k-n {position: fixed;}
+
+/* Hide Comment Count on Dashboard */
+span.OJTUNIC-F-a {display: none;}
+span.blogg-image-tooltip.OJTUNIC-F-b {display: none;}
+
+/* Hide GPlus Count on Dashboard */
+a.OJTUNIC-F-f {display: none;}
+
+/* Hide Stats Icon on Dashboard */
+span.blogg-image-tooltip.OJTUNIC-F-h {display: none;}
+
+/* Change Label Font on Dashboard */
+a.OJTUNIC-F-d {text-decoration: none;font-style: normal;color: brown;font-size: 11px;}
+
+/* Change Dropdown List Font and Padding Dashboard */
+.OJTUNIC-v-b {padding: 4px 4px;font-size: 11px;}
+
+/* Change Scheduled and Draft Font on Dashboard */
+span.OJTUNIC-cb-c {color: red;font-size: 11px;font-weight: bold;font-style: normal;}
+
+/* Change Article Title Font on Dashboard */
+a.OJTUNIC-F-i {font-weight: bold;color: black;font-size: 12px;}
+
+/* Row Padding and Comment/Date/Author Font Size  */
+.OJTUNIC-K-a {padding: 0px 5px;font-size: 11px;}

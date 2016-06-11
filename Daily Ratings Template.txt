@@ -6,26 +6,25 @@
 Last Week's Final Adjusted Ratings 
 </div>
 <div class="collapsible-body">
-<iframe frameborder="0" src="http://stvplus.com/show/embed/?daily=2015-03-05" height="546px" width="100%" ></iframe> 
+<iframe frameborder="0" src="http://stvplus.com/show/embed/?daily=2016-03-02" height="609px" width="100%" ></iframe> 
 </div>
 </li>
 <li>
 <div class="collapsible-header large">
-Early Ratings Analysis by Marc Berman (TVMediaInsights)
+Early HH Ratings from Marc Berman (programminginsider)
 </div>
 <div class="collapsible-body">
 <div class="newindent">
 The analysis below is based on the early household numbers and are NOT the same as the numbers that will be posted in the above table later. (See the About section below)
 
 <div class="highlight">
-NOTE: The opinions expressed here are NOT those of SpoilerTV but of the Author of this Article, <a href="http://www.tvmediainsights.com">Marc Berman</a>.</div>
-
+NOTE: The opinions expressed here are NOT those of SpoilerTV but of the Author of this Article, <a href="http://programminginsider.com/">Marc Berman</a>.</div>
 
 <div class="sourcewrapper">
 <div class="newsource">
 Source: </div>
 <div class="newlink">
-<a href="http://www.tvmediainsights.com">Marc Berman@tvmediainsights</a> </div>
+<a href="http://programminginsider.com/">Marc Berman@programminginsider</a> </div>
 </div>
 </div>
 </div>
@@ -59,10 +58,14 @@ Don't forget to follow our <a href="https://twitter.com/stv_ratings"> Ratings On
 </div>
 </li>
 </ul>
+<span class="highlight">
+<b>Remember: No Spoilers in the Comments and please stay on Topic. If you want to chat about anything at all please use the <a href="http://www.spoilertv.com/2015/01/the-spoilertv-community-open-discussion.html">Open Discussion Thread</a>.</b></span> 
 
+ <div id="wrapper" style="width: 100%; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch;">
 <center>
-<iframe class="dailyratings" frameBorder="0" class="adsbygoogle blockedcontent"   src="https://docs.google.com/spreadsheets/d/1uNx7Nx2FyvFMmYe_Ed7flSe-gU88-Niwl5gP7IQlNRk/pubhtml?gid=336745480" width="100%" height="800"></iframe>
+<iframe class="dailyratings" frameBorder="0" class="adsbygoogle blockedcontent"   src="https://docs.google.com/spreadsheets/d/1aVLV1rPNFlvHIPeAtDQZabLUwBsWy1acIvATiE0K_n8/pubhtml?gid=531437240" width="100%" height="900"></iframe>
 </center>
+</div>
 <div class="ratingsadditionalcontainer">
 <div class="ratingstitle ratingssmall">
 Renew/Cancel</div>
