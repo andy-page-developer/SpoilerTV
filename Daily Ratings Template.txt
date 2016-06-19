@@ -1,4 +1,4 @@
-<!-- more --><img width="726px" border="0" src="http://1.bp.blogspot.com/-bdXR8uYANyM/VGsnIboVG8I/AAAAAAABjvM/jGbIEd1jZ0w/s1600/header-dailyratings-white.jpg" />
+<!-- more --><img class="headerimage" width="726px" border="0" src="//cdn.spoilertv.com/images/headers/header-dailyratings-white.jpg" />
 
 <ul class="collapsible" data-collapsible="accordion">
 <li>

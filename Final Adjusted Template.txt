@@ -1,6 +1,6 @@
 Final Adjusted TV Ratings for Sunday 4th June 2016
 
-<img width="726px" border="0" src="http://2.bp.blogspot.com/-kwSjWx4rQz0/VGseX8CZh7I/AAAAAAABju4/RbhTevZr4SI/s1600/finalratings.jpg" />
+<img class="headerimage" width="726px" border="0" src="//cdn.spoilertv.com/images/headers/finalratings.jpg" />
 
 Remember you can view ALL Ratings and Charts for all shows/seasons in our <a class="sourcelink linkpop" href="http://www.stvplus.com/">Interactive TV Ratings Database</a>.
 
